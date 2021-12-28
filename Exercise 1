@@ -1,0 +1,50 @@
+package array;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			final int no = 5;
+
+		      int[] list1 = new int[no];
+		      int[] list2 = new int[no];
+
+		      Scanner scan = new Scanner(System.in);
+		      System.out.println("Enter " + no + " numbers.");
+
+		      for (int i = 0; i < no; i++)
+		      {
+		          list1[i] = scan.nextInt();
+		      }
+
+		      for (int i = 0; i < no; i++)
+		      {
+		          list2[i] = list1[i];
+		      }
+		      
+		      System.out.println("Elements of list2 are: ");
+		      for (int i = 0; i < no; i++)
+		      {
+		          System.out.println(list2[i]);
+		      }
+	}
+
+}
+
+OUTPUT
+
+Enter 5 numbers.
+4
+3
+10
+8
+16
+Elements of list2 are: 
+4
+3
+10
+8
+16
