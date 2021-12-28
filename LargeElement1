@@ -1,0 +1,27 @@
+package array;
+
+public class LargeElement2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				//double[] sales = new double[10];
+				double sales[] = {10.0,20.1,90.0,40.0,50.0,60.0,80.0,70.0,30.0};
+				int index, maxIndex;
+				double largestSale;
+
+				maxIndex = 0;
+				
+				for(index = 1; index<sales.length;index++) 
+				   if (sales[maxIndex] < sales[index])
+				       maxIndex = index;
+				
+				System.out.println(maxIndex);
+				largestSale = sales[maxIndex];
+				
+				System.out.println(largestSale);
+	}
+
+}
+OUTPUT
+2
+90.0
