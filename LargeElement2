@@ -1,0 +1,40 @@
+package array;
+
+import java.util.Scanner;
+
+public class Largestelement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		double[]sales =new double[5];
+		int index, maxIndex;
+		double largestSale;
+
+		maxIndex = 0;
+		
+		System.out.print("Please enter 5 array elements : ");
+		for(int i = 0; i < sales.length; i++)
+			sales[i]= scan.nextDouble();
+		
+		for(index = 1; index<sales.length;index++) 
+		   if (sales[maxIndex] < sales[index])
+		       maxIndex = index;
+		
+		System.out.println(maxIndex);
+		largestSale = sales[maxIndex];
+		
+		System.out.println(largestSale);
+		
+	}
+
+}
+OUTPUT
+Please enter 5 array elements : 10
+50
+30
+60
+15
+3
+60.0
